@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int [] numeros=new int[5];
+		int soma=0;
+		double media;
+		
+		for (int i=0;i<numeros.Length;i++){
+			Console.WriteLine("digite o "+(i+1)+"º numero");
+			numeros[i]=int.Parse(Console.ReadLine());
+			soma+=numeros[i];
+		}
+		media=soma/5;
+		
+				Console.WriteLine("a soma dos 5 numeros são: "+soma);
+				Console.WriteLine("a media dos 5 numeros são: "+media);
+		
+		Console.ReadLine();
+	}
+}
