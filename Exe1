@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main(){
+    
+    double nota;
+	Console.WriteLine("Digite sua nota: ");
+	nota=double.Parse(Console.ReadLine());
+		
+		while (nota<0 || nota >10){
+			
+			Console.WriteLine("Nota invalida insira a nota novamente!");
+		    nota=double.Parse(Console.ReadLine());}
+		    Console.WriteLine("Nota iserida corretamente ");
+                             Console.ReadLine();
+
+}
+	
+}
