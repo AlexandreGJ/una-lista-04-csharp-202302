@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	string nome,senha;
+    Console.WriteLine("Digite seu Usar Name: ");
+	nome=Console.ReadLine();
+	Console.WriteLine("Digite sua senha: ");
+	senha=Console.ReadLine();
+		
+		while (senha==nome){
+			Console.WriteLine("Senha Igual ao nome de usuario tente novamente.");
+		
+	Console.WriteLine("Digite seu Usar Name: ");
+	nome=Console.ReadLine();
+	Console.WriteLine("Digite sua senha: ");
+	senha=Console.ReadLine();
+			
+	
+		}
+	Console.WriteLine("Login concluido! ");	
+    Console.ReadLine();
+	}
+}
