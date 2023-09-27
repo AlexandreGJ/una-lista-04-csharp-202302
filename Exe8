@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main(){
+  int soma=0,pares=0,impares=0;
+  int [] numeros = new int[10];
+		
+ for (int i =0;i<numeros.Length;i++){
+	  Console.WriteLine("Digite o "+(i+1)+"º numero");
+	  numeros[i]= int.Parse(Console.ReadLine());
+	  soma += numeros[i];
+
+	 if (numeros[i]%2==0)
+		 pares++;
+	 
+	 else 
+		 impares++;
+		 
+ }
+   Console.WriteLine("A soma dos numeros são: "+soma);
+   Console.WriteLine("Foram digitados "+impares+" numeros impares.");
+   Console.WriteLine("Foram digitados "+pares+" numeros pares.");
+		Console.ReadLine();
+	}
+}
