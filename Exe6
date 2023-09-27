@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int num1,num2,maior,menor;
+		Console.WriteLine("digite dois numeros inteiros");
+		num1=int.Parse(Console.ReadLine());
+		num2=int.Parse(Console.ReadLine());
+		
+		if (num1>num2){
+			maior=num1;
+		    menor=num2;
+		}
+		else {
+			maior=num2;
+			menor=num1;
+		}
+		
+		for (int i = menor; i >= menor && i <= maior; i++){
+		Console.WriteLine(i);
+		}
+			Console.ReadLine();
+	}
+}
